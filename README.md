@@ -79,10 +79,36 @@ Some character classes include:
 
 ### The OR Operator
 
+In javascript, the "or" expression is represented with the "pipe" symbol, aka `|`. The OR operator does exactly what you think it does, makes it have 2 conditionals that could be one of the other.
+
+In the hexidecimal regex expresion, we see that `[a-f0-9]{6}` and `[a-f0-9]{3}` are seperated with the OR operator. This means it could either be a 6 character phrase using a to f and 0 to 9, or a 3 character phrase using the same characters.
+
 ### Flags
 
+Flags are the one way a regex doesn't need to be inside slash characters. They are placed at the end of one, after the slash at the end. They define any other rules for the regex. There are 8 total flags.
+
+* `d`, which generates a list of matching names for substring matches
+
+* `g`, which makes it test against all possible matches
+
+* `i`, which makes the match ignore case
+
+* `m`, which allows `^` and `$` next to newline characters
+
+* `s`, which allows `.` next to newline characters
+
+* `u`, which treats the pattern as a sequence of unicode points
+
+* `v`, which is just `u` with more unicode features
+
+* `y`, which performs a "sticky" search that matches the current position in the target string
+ 
 ### Character Escapes
+
+Character escapes ways to, well, "escape" characters that would otherwise be seen as a special command. This character, `\`, can make `{` seen as a normal character by putting `\{` in the regex.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Created by: Seth Correa (Seth The Furboi).
+
+[Github](https://github.com/SethTheFurboi)
